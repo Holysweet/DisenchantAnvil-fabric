@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "id": "disenchantanvil",
+  "version": "${version}",
+  "name": "Disenchant Anvil",
+  "description": "Extract enchantments from items using falling anvils.",
+  "authors": [
+    "Holysweet"
+  ],
+  "contact": {},
+  "license": "All Rights Reserved",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.holysweet.disenchantanvil.DisenchantAnvil"
+    ]
+  },
+  "mixins": [
+    "disenchantanvil.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.4",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
