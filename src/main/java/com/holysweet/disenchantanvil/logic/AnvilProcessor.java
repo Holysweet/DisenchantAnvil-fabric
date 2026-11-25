@@ -188,7 +188,6 @@ public final class AnvilProcessor {
         ItemEnchantments.Mutable m = new ItemEnchantments.Mutable(ItemEnchantments.EMPTY);
         m.set(ench, level);
         out.set(DataComponents.STORED_ENCHANTMENTS, m.toImmutable());
-        resetAnvilPenalty(out);
         return out;
     }
 
@@ -232,7 +231,6 @@ public final class AnvilProcessor {
             it.setPos(px, py, pz);
             it.setDeltaMovement(dx, lift, dz);
             it.setOnGround(false);
-            it.hurtMarked = true;
         }
     }
 }
